@@ -1,0 +1,613 @@
+2023-06-29 07:31:09,564:INFO:steam.client: Logging in to steamcommunity.com
+2023-06-29 07:31:09,989:DEBUG:steam.http: POST https://steamcommunity.com/login/getrsakey with PAYLOAD: {'username': 'briskswag1', 'donotcache': 1688038269565} has returned 200
+2023-06-29 07:31:09,989:DEBUG:steam.http: POST https://steamcommunity.com/login/getrsakey has received {'success': True, 'publickey_mod': 'c1a11d4d98ac92efc3e475ec6ddcf3639e39ce50779e7982e06958f3160b21d4b334fa3b811522daf4375a5da994f42dbc2078e348f54d01bf6c3f160270dc447212e665afa22a7648abec7ddd2ec3739f12ce6796feccacd11a68acd9aa827110b1feb283de0d66fc8d3dee0649b78eefa58aa7d41d6fa5d308a0c99c9df94bee8e0ee77f1207b6b7d0361807ef2ef6c88b6d19b83951d23bb3f62d1eb7c65ede548a37da0f79e60071e037aeb191d38a0f581bfd584696c16cbdb60add1877f83fb4d326b2562a9c2bc4a38078598ada59cafed384eaa080ee4c3abf3b9af96fd6e27da100a352a677f3b33856d7e979ece9a5791479fa6db6e8f204d0555b', 'publickey_exp': '010001', 'timestamp': '133260050000', 'token_gid': '2805e0b0a2fb46f4'}
+2023-06-29 07:31:10,385:DEBUG:steam.http: POST https://steamcommunity.com/login/dologin with PAYLOAD: {'username': 'briskswag1', 'password': 'ZgmC7WntXMCx2hDUAVd6WW41CL5p1o70+N1YUkeAqPlvARtUcNAGEsE4inCApZq+T5dgJgDCgUHgw9GCY7xo6e9tut9Uloab9eVoVNj8WZTcof/ckYh1CVzSsj7QNykWpPfRcd3akx3UKWQ0LNWQ0ZauTvKtNigVdt50MT1ik7mk/QMy9UlgTy62edsArArLZjjqK5P0A+ScyoGw6UhcSPrdHKEp/tCtY8vd/M9WwSUJW0WGcjZdTxNqyh9FcLVzhUbPYUsZxDFJZ+VqkE8NJWYS3UzqPvq3roX3dZiMJyRIW1U/CRbYNH9HtOBQFap8PiSE1dR+vAiI+DrCLeYxVA==', 'emailauth': '', 'emailsteamid': '', 'twofactorcode': 'PYP8N', 'captchagid': '-1', 'captcha_text': '', 'loginfriendlyname': 'steam.py/0.9.9 client (https://github.com/Gobot1234/steam.py), Python/3.11, aiohttp/3.8.4', 'rsatimestamp': '133260050000', 'remember_login': True, 'donotcache': 1688038270058} has returned 200
+2023-06-29 07:31:10,386:DEBUG:steam.http: POST https://steamcommunity.com/login/dologin has received {'success': True, 'requires_twofactor': False, 'login_complete': True, 'transfer_urls': ['https://store.steampowered.com/login/transfer', 'https://help.steampowered.com/login/transfer'], 'transfer_parameters': {'steamid': '76561199125288728', 'token_secure': '93A08127EA9E994AB27A7863308FCF2C2A2BB1AA', 'auth': 'd52b2a79a2f586efd9888a4069afaabb', 'remember_login': False, 'webcookie': '4578300E3913AD6A262731421048F784D412A84C'}}
+2023-06-29 07:31:10,743:DEBUG:steam.http: GET https://steamcommunity.com/dev/apikey with PAYLOAD: None has returned 200
+2023-06-29 07:31:10,744:DEBUG:steam.http: GET https://steamcommunity.com/dev/apikey has received <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Steam Community :: Steam Web API Key</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="https://community.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=-DH0xTYpnVe2&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/shared/css/buttons.css?v=n-eRNszNIRMH&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/shared/css/shared_global.css?v=s_RZOH8t8alV&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/css/globalv2.css?v=GtBXfuM7ql2k&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/css/skin_1/global.css?v=uU_KcUiSe7pP&amp;l=english&amp;client=0" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/css/skin_1/dev_apikey.css?v=.Ur3EHKY5AJUB" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/css/skin_1/header.css?v=NFoCa4OkAxRb&amp;l=english" rel="stylesheet" type="text/css" >
+<script type="text/javascript">
+	var __PrototypePreserve=[];
+	__PrototypePreserve[0] = Array.from;
+	__PrototypePreserve[1] = Array.prototype.filter;
+	__PrototypePreserve[2] = Array.prototype.flatMap;
+	__PrototypePreserve[3] = Array.prototype.find;
+	__PrototypePreserve[4] = Array.prototype.some;
+	__PrototypePreserve[5] = Function.prototype.bind;
+	__PrototypePreserve[6] = HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/prototype-1.7.js?v=.55t44gwuwgvw" ></script>
+<script type="text/javascript">
+	Array.from = __PrototypePreserve[0] || Array.from;
+	Array.prototype.filter = __PrototypePreserve[1] || Array.prototype.filter;
+	Array.prototype.flatMap = __PrototypePreserve[2] || Array.prototype.flatMap;
+	Array.prototype.find = __PrototypePreserve[3] || Array.prototype.find;
+	Array.prototype.some = __PrototypePreserve[4] || Array.prototype.some;
+	Function.prototype.bind = __PrototypePreserve[5] || Function.prototype.bind;
+	HTMLElement.prototype.scrollTo = __PrototypePreserve[6] || HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/community.akamai.steamstatic.com\/public\/";</script><script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/scriptaculous/_combined.js?v=OeNIgrpEF8tL&amp;l=english&amp;load=effects,controls,slider,dragdrop" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/global.js?v=ANwUVGvyuvAL&amp;l=english" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/jquery-1.11.1.min.js?v=.isFTSRckeNhC" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=.zYHOpI1L3Rt0" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=ymLq7HqPFUuU&amp;l=english" ></script>
+<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script><script type="text/javascript">$J = jQuery.noConflict();
+if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( "<scr" + "ipt type=\"text\/javascript\" src=\"https:\/\/community.akamai.steamstatic.com\/public\/javascript\/json2.js?v=pmScf4470EZP&amp;l=english\" ><\/script>\n" ); };
+</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				SetupTooltips( { tooltipCSSClass: 'community_tooltip'} );
+		});
+		</script><SCRIPT LANGUAGE=JAVASCRIPT>
+	function verifyRevoke(){
+		msg = "Revoking your Steam Web API Key will stop any apps that use this key from working. It cannot be undone. Are you sure you want to do this?";
+		return confirm(msg);
+		}
+</SCRIPT>
+</head>
+<body>
+<center>
+<!-- header bar, contains info browsing user if logged in -->
+<div id="global_header" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+	<div class="content">
+		<div class="logo">
+			<span id="logo_holder">
+									<a href="https://store.steampowered.com/">
+						<img src="https://community.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44">
+					</a>
+							</span>
+		</div>
+
+			<div class="supernav_container">
+	<a class="menuitem supernav " href="https://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		STORE	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="https://store.steampowered.com/">Home</a>
+					<a class="submenuitem" href="https://store.steampowered.com/explore/">Discovery Queue</a>
+				<a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">Wishlist</a>
+		<a class="submenuitem" href="https://store.steampowered.com/points/shop/">Points Shop</a>	
+       	<a class="submenuitem" href="https://store.steampowered.com/news/">News</a>
+					<a class="submenuitem" href="https://store.steampowered.com/stats/">Stats</a>
+							<a class="submenuitem" href="https://store.steampowered.com/about/">About</a>
+			</div>
+
+
+			<a class="menuitem supernav supernav_active" style="display: block" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+			COMMUNITY		</a>
+		<div class="submenu_community" style="display: none;" data-submenuid="community">
+			<a class="submenuitem" href="https://steamcommunity.com/">Home</a>
+			<a class="submenuitem" href="https://steamcommunity.com/discussions/">Discussions</a>
+			<a class="submenuitem" href="https://steamcommunity.com/workshop/">Workshop</a>
+			<a class="submenuitem" href="https://steamcommunity.com/market/">Market</a>
+			<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+											</div>
+		
+
+			<a class="menuitem supernav username persona_name_text_content " href="https://steamcommunity.com/profiles/76561199125288728/home/" data-tooltip-type="selector" data-tooltip-content=".submenu_username">
+			briskswag		</a>
+		<div class="submenu_username" style="display: none;" data-submenuid="username">
+			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/home/">Activity</a>
+			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/">Profile</a>
+			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/friends/">Friends</a>
+			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/games/">Games</a>
+			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/groups/">Groups</a>			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/screenshots/">Content</a>			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/badges/">Badges</a>			<a class="submenuitem" href="https://steamcommunity.com/profiles/76561199125288728/inventory/">Inventory</a>		</div>
+	
+						<a class="menuitem" href="https://steamcommunity.com/chat/">
+				Chat			</a>
+			
+	<a class="menuitem " href="https://help.steampowered.com/en/">
+		SUPPORT	</a>
+	</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'destroyWhenDone': false, 'tooltipClass': 'supernav_content', 'offsetY':-6, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div id="global_action_menu">
+									<a class="header_installsteam_btn header_installsteam_btn_gray" href="https://store.steampowered.com/about/">
+						<div class="header_installsteam_btn_content">
+							Install Steam						</div>
+					</a>
+				
+				
+										<!-- notification inbox area -->
+																								<div id="header_notification_area" style="position:relative">
+											<div data-featuretarget="green-envelope"></div>
+				<div id="header_notification_link" class="header_notification_btn global_header_toggle_button header_notification_bell"></div>
+									</div>
+					<span class="pulldown global_action_link persona_name_text_content" id="account_pulldown" onclick="ShowMenu( this, 'account_dropdown', 'right', 'bottom', true );">
+						briskswag					</span>
+					<div class="popup_block_new" id="account_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+															<a class="popup_menu_item" href="https://steamcommunity.com/profiles/76561199125288728/">View profile</a>
+								<a class="popup_menu_item" href="https://store.steampowered.com/account/">Account details</a>
+																						<a class="popup_menu_item" href="javascript:Logout();">Logout: <span class="persona online">briskswag1</span></a>
+																						<a class="popup_menu_item" href="https://store.steampowered.com/account/preferences/">Preferences</a>
+							
+															<span class="popup_menu_item" id="account_language_pulldown">Change language</span>
+								<div class="popup_block_new" id="language_dropdown" style="display: none;">
+									<div class="popup_body popup_menu">
+																																													<a class="popup_menu_item tight" href="?l=schinese" onclick="ChangeLanguage( 'schinese' ); return false;">简体中文 (Simplified Chinese)</a>
+																																			<a class="popup_menu_item tight" href="?l=tchinese" onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文 (Traditional Chinese)</a>
+																																			<a class="popup_menu_item tight" href="?l=japanese" onclick="ChangeLanguage( 'japanese' ); return false;">日本語 (Japanese)</a>
+																																			<a class="popup_menu_item tight" href="?l=koreana" onclick="ChangeLanguage( 'koreana' ); return false;">한국어 (Korean)</a>
+																																			<a class="popup_menu_item tight" href="?l=thai" onclick="ChangeLanguage( 'thai' ); return false;">ไทย (Thai)</a>
+																																			<a class="popup_menu_item tight" href="?l=bulgarian" onclick="ChangeLanguage( 'bulgarian' ); return false;">Български (Bulgarian)</a>
+																																			<a class="popup_menu_item tight" href="?l=czech" onclick="ChangeLanguage( 'czech' ); return false;">Čeština (Czech)</a>
+																																			<a class="popup_menu_item tight" href="?l=danish" onclick="ChangeLanguage( 'danish' ); return false;">Dansk (Danish)</a>
+																																			<a class="popup_menu_item tight" href="?l=german" onclick="ChangeLanguage( 'german' ); return false;">Deutsch (German)</a>
+																																			<a class="popup_menu_item tight" href="?l=english" onclick="ChangeLanguage( 'english' ); return false;">English</a>
+																																			<a class="popup_menu_item tight" href="?l=spanish" onclick="ChangeLanguage( 'spanish' ); return false;">Español - España (Spanish - Spain)</a>
+																																			<a class="popup_menu_item tight" href="?l=latam" onclick="ChangeLanguage( 'latam' ); return false;">Español - Latinoamérica (Spanish - Latin America)</a>
+																																			<a class="popup_menu_item tight" href="?l=greek" onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά (Greek)</a>
+																																			<a class="popup_menu_item tight" href="?l=french" onclick="ChangeLanguage( 'french' ); return false;">Français (French)</a>
+																																			<a class="popup_menu_item tight" href="?l=italian" onclick="ChangeLanguage( 'italian' ); return false;">Italiano (Italian)</a>
+																																			<a class="popup_menu_item tight" href="?l=hungarian" onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar (Hungarian)</a>
+																																			<a class="popup_menu_item tight" href="?l=dutch" onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands (Dutch)</a>
+																																			<a class="popup_menu_item tight" href="?l=norwegian" onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk (Norwegian)</a>
+																																			<a class="popup_menu_item tight" href="?l=polish" onclick="ChangeLanguage( 'polish' ); return false;">Polski (Polish)</a>
+																																			<a class="popup_menu_item tight" href="?l=portuguese" onclick="ChangeLanguage( 'portuguese' ); return false;">Português (Portuguese - Portugal)</a>
+																																			<a class="popup_menu_item tight" href="?l=brazilian" onclick="ChangeLanguage( 'brazilian' ); return false;">Português - Brasil (Portuguese - Brazil)</a>
+																																			<a class="popup_menu_item tight" href="?l=romanian" onclick="ChangeLanguage( 'romanian' ); return false;">Română (Romanian)</a>
+																																			<a class="popup_menu_item tight" href="?l=russian" onclick="ChangeLanguage( 'russian' ); return false;">Русский (Russian)</a>
+																																			<a class="popup_menu_item tight" href="?l=finnish" onclick="ChangeLanguage( 'finnish' ); return false;">Suomi (Finnish)</a>
+																																			<a class="popup_menu_item tight" href="?l=swedish" onclick="ChangeLanguage( 'swedish' ); return false;">Svenska (Swedish)</a>
+																																			<a class="popup_menu_item tight" href="?l=turkish" onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe (Turkish)</a>
+																																			<a class="popup_menu_item tight" href="?l=vietnamese" onclick="ChangeLanguage( 'vietnamese' ); return false;">Tiếng Việt (Vietnamese)</a>
+																																			<a class="popup_menu_item tight" href="?l=ukrainian" onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська (Ukrainian)</a>
+																															<a class="popup_menu_item tight" href="https://www.valvesoftware.com/en/contact?contact-person=Translation%20Team%20Feedback" target="_blank">
+											Report a translation problem										</a>
+									</div>
+								</div>
+													</div>
+					</div>
+					<script type="text/javascript">
+						RegisterFlyout( 'account_language_pulldown', 'language_dropdown', 'leftsubmenu', 'bottomsubmenu', true );
+					</script>
+												</div>
+							<a href="https://steamcommunity.com/profiles/76561199125288728/" class="user_avatar playerAvatar offline">
+					<img src="https://avatars.akamai.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg">
+				</a>
+					</div>
+			</div>
+</div>
+<div id="modalBG" style="display: none"></div><script type="text/javascript">
+	g_sessionID = "3b2e34722da277d566c5191b";
+	g_steamID = "76561199125288728";
+	g_strLanguage = "english";
+	g_SNR = '2_developer_apikey_';
+	g_bAllowAppImpressions = false;
+		g_ContentDescriptorPreferences = [1,3,4];
+
+			$J( function() { InitCookiePreferencesPopup() } );
+	
+
+	// We always want to have the timezone cookie set for PHP to use
+	setTimezoneCookies();
+
+	$J( function() {
+
+		InitMiniprofileHovers(( 'https%3A%2F%2Fsteamcommunity.com' ));
+		InitEmoticonHovers();
+		ApplyAdultContentPreferences();
+	});
+
+	$J( function() { InitEconomyHovers( "https:\/\/community.akamai.steamstatic.com\/public\/css\/skin_1\/economy.css?v=W1lpCYkssBMO&l=english", "https:\/\/community.akamai.steamstatic.com\/public\/javascript\/economy_common.js?v=tsXdRVB0yEaR&l=english", "https:\/\/community.akamai.steamstatic.com\/public\/javascript\/economy.js?v=zBu5E2N7nc-G&l=english" );});</script>
+<div id="application_config" style="display: none;"  data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;english&quot;,&quot;COUNTRY&quot;:&quot;PT&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.akamai.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.akamai.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/community.akamai.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/community.akamai.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/steamcommunity.com\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1687905668,&quot;PAGE_TIMESTAMP&quot;:1688038268,&quot;IN_TENFOOT&quot;:false,&quot;IN_GAMEPADUI&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;unknown&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.akamai.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Community&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.akamai.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.akamai.steamstatic.com\/&quot;,&quot;SNR&quot;:&quot;2_developer_apikey_&quot;}" data-userinfo="{&quot;logged_in&quot;:true,&quot;steamid&quot;:&quot;76561199125288728&quot;,&quot;accountid&quot;:1165023000,&quot;account_name&quot;:&quot;briskswag1&quot;,&quot;is_support&quot;:false,&quot;is_limited&quot;:false,&quot;is_partner_member&quot;:false,&quot;country_code&quot;:&quot;PT&quot;}" data-community="[]" data-loyaltystore="{&quot;webapi_token&quot;:&quot;085992d584ada887e062dc1746c8f678&quot;}" data-loyalty_webapi_token="&quot;085992d584ada887e062dc1746c8f678&quot;" data-steam_notifications="{&quot;notifications&quot;:[{&quot;notification_id&quot;:&quot;32210978823&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;4255386153020070063\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686718976,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32311635193&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238198433217\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686787812,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32416332026&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238201976042\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686861010,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119849&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168239\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119854&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168242\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119855&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168245\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119856&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168248\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119857&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168253\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119858&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168256\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430397651&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202399487\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870339,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430397652&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202399488\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870339,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430488802&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202403243\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870422,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430777691&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202410330\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870583,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430777694&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202410331\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870583,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32431229016&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202419456\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870788,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;33370173246&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;4243002139663506314\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1687666084,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;33370173247&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;4243002139663506317\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1687666084,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0}],&quot;pending_gift_count&quot;:0,&quot;pending_friend_count&quot;:0,&quot;unread_count&quot;:17,&quot;success&quot;:1,&quot;rwgrsn&quot;:-2}"></div><link href="https://community.akamai.steamstatic.com/public/css/applications/community/main.css?v=f0K-RL4Kp9_R&amp;l=english" rel="stylesheet" type="text/css" >
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/applications/community/manifest.js?v=Ap77QfkcNEeX&amp;l=english" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/applications/community/libraries~b28b7af69.js?v=gGa9egdalgLx&amp;l=english" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/applications/community/main.js?v=EY0KdfJaxlp4&amp;l=english" ></script>
+	<div id="application_root"></div>
+<!-- /header bar -->
+
+
+<!-- top content -->
+<div id="BG_top">
+	<div id="mainContents">
+		<h2>Register Steam Web API Key</h2>
+	</div>
+</div>
+<!-- /top content -->
+<!-- main body -->
+<div id="BG_bottom">
+
+	<div id="bodyContents_ex">
+	
+							<h2>Your Steam Web API Key</h2>
+			<p>Key: EE62127D7030A8E00982B348B76B7E88</p>
+			<p>Domain Name: steam.py</p>
+			<form class="smallForm" id="editForm" name="editForm" method="POST" action="https://steamcommunity.com/dev/revokekey" onSubmit="return verifyRevoke()">
+				<input type="submit" name="Revoke" value="Revoke My Steam Web API Key">
+				<input type="hidden" name="sessionid" value="3b2e34722da277d566c5191b">
+			</form>
+				
+			
+	</div>
+
+
+<br clear="all" />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+</div>
+<!-- footer -->
+	<div id="footer_spacer" class=""></div>
+	<div id="footer_responsive_optin_spacer"></div>
+	<div id="footer">
+					<div class="footer_content">
+				<span id="footerLogo"><img src="https://community.akamai.steamstatic.com/public/images/skin_1/footerLogo_valve.png?v=1" width="96" height="26" border="0" alt="Valve Logo" /></span>
+				<span id="footerText">
+					&copy; Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.<br/>Some geospatial data on this website is provided by <a href="https://steamcommunity.com/linkfilter/?url=http://www.geonames.org" target="_blank" rel=" noopener">geonames.org</a>.					<br>
+											<span class="valve_links">
+							<a href="http://store.steampowered.com/privacy_agreement/" target="_blank">Privacy Policy</a>
+							&nbsp; | &nbsp;<a href="https://store.steampowered.com/legal/" target="_blank">Legal</a>
+							&nbsp;| &nbsp;<a href="http://store.steampowered.com/subscriber_agreement/" target="_blank">Steam Subscriber Agreement</a>
+                            &nbsp;| &nbsp;<a href="http://store.steampowered.com/account/cookiepreferences/" target="_blank">Cookies</a>
+						</span>
+									</span>
+			</div>
+							<div class="responsive_optin_link">
+				<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+					<span>View mobile website</span>
+				</div>
+			</div>
+			</div>
+	<!-- /footer -->
+
+</center>
+</body>
+</html>
+
+2023-06-29 07:31:11,024:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561199125288728 with PAYLOAD: None has returned 200
+2023-06-29 07:31:11,024:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561199125288728 has received {'response': {'players': [{'steamid': '76561199125288728', 'communityvisibilitystate': 3, 'personaname': 'briskswag', 'profileurl': 'https://steamcommunity.com/profiles/76561199125288728/', 'avatar': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg', 'avatarmedium': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg', 'avatarfull': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg', 'avatarhash': 'fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb', 'lastlogoff': 1687810451, 'personastate': 0, 'primaryclanid': '103582791429521408', 'timecreated': 1609532243, 'personastateflags': 0}]}}
+2023-06-29 07:31:11,024:DEBUG:steam.client: Dispatching event login
+2023-06-29 07:31:11,279:DEBUG:steam.http: GET https://steamcommunity.com/chat/clientjstoken with PAYLOAD: None has returned 200
+2023-06-29 07:31:11,279:DEBUG:steam.http: GET https://steamcommunity.com/chat/clientjstoken has received {'logged_in': True, 'steamid': '76561199125288728', 'accountid': 1165023000, 'account_name': 'briskswag1', 'token': 'fWudZLKgfo4AAAAAAAAAAAAAAAAAAAAAAwD/WKAdj+/OsErXyxSAW29F'}
+2023-06-29 07:31:11,279:DEBUG:steam.gateway: Attempting to fetch servers from the WebAPI
+2023-06-29 07:31:11,452:DEBUG:steam.http: GET https://api.steampowered.com/IEconService/GetTradeOffers/v1?key=EE62127D7030A8E00982B348B76B7E88&active_only=true&get_sent_offers=true&get_received_offers=true&get_descriptions=true&cursor=0&language=english with PAYLOAD: None has returned 200
+2023-06-29 07:31:11,452:DEBUG:steam.http: GET https://api.steampowered.com/IEconService/GetTradeOffers/v1?key=EE62127D7030A8E00982B348B76B7E88&active_only=true&get_sent_offers=true&get_received_offers=true&get_descriptions=true&cursor=0&language=english has received {'response': {'trade_offers_sent': [{'tradeofferid': '6157454086', 'accountid_other': 349701530, 'message': '', 'expiration_time': 1688875645, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4261015652572615244', 'classid': '3692235822', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '120'}, {'appid': 252490, 'contextid': '2', 'assetid': '4261015652572615259', 'classid': '4010603079', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '107'}], 'is_our_offer': True, 'time_created': 1687666045, 'time_updated': 1687666084, 'tradeid': '4724887048335207671', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139222868', 'accountid_other': 1158307459, 'message': 'yuppie!', 'expiration_time': 1688080277, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '6965427323784892035', 'classid': '1239822445', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '16'}], 'is_our_offer': True, 'time_created': 1686870677, 'time_updated': 1686870789, 'tradeid': '5929599407544138149', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139221147', 'accountid_other': 1158307459, 'message': 'yuppie!', 'expiration_time': 1688080124, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '6965427323784892038', 'classid': '4666163161', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '82'}, {'appid': 252490, 'contextid': '2', 'assetid': '6965427323784892042', 'classid': '1594188998', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '38'}], 'is_our_offer': True, 'time_created': 1686870524, 'time_updated': 1686870583, 'tradeid': '5929599407544129479', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139219544', 'accountid_other': 349701530, 'message': 'yuppie!', 'expiration_time': 1688079986, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4245248616177850284', 'classid': '1239822445', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '16'}], 'is_our_offer': True, 'time_created': 1686870386, 'time_updated': 1686870422, 'tradeid': '7025100018847026541', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139217410', 'accountid_other': 349701530, 'message': 'yuppie!', 'expiration_time': 1688079801, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4261015652556132254', 'classid': '5171001219', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '63'}, {'appid': 252490, 'contextid': '2', 'assetid': '4261015652556132260', 'classid': '1368635034', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '33'}], 'is_our_offer': True, 'time_created': 1686870201, 'time_updated': 1686870339, 'tradeid': '7025100018847023017', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139155198', 'accountid_other': 1158307459, 'message': 'yuppie!', 'expiration_time': 1688074918, 'trade_offer_state': 8, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4256511418559555323', 'classid': '4666163161', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '83'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559555326', 'classid': '1594188998', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '38'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695357', 'classid': '5171001219', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '63'}], 'is_our_offer': True, 'time_created': 1686865318, 'time_updated': 1686865733, 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139152764', 'accountid_other': 1158307459, 'message': 'yuppie!', 'expiration_time': 1688074750, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695360', 'classid': '4524947203', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '84'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695363', 'classid': '1442537261', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '34'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559466047', 'classid': '5273765717', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '73'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559573522', 'classid': '1150162590', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '28'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695366', 'classid': '1145031842', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '10'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559513549', 'classid': '2038145408', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '169'}], 'is_our_offer': True, 'time_created': 1686865150, 'time_updated': 1686865184, 'tradeid': '5929599407543901305', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139114049', 'accountid_other': 1158307459, 'message': 'yuppie!', 'expiration_time': 1688072273, 'trade_offer_state': 7, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4256511418559513549', 'classid': '2038145408', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '166'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695366', 'classid': '1145031842', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '10'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559573522', 'classid': '1150162590', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '28'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559555326', 'classid': '1594188998', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '38'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559466046', 'classid': '1239822445', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '16'}], 'is_our_offer': True, 'time_created': 1686862673, 'time_updated': 1686862707, 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139086360', 'accountid_other': 1158307459, 'message': 'yuppie!', 'expiration_time': 1688070733, 'trade_offer_state': 7, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695360', 'classid': '4524947203', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '84'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559573522', 'classid': '1150162590', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '28'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559513549', 'classid': '2038145408', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '166'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695366', 'classid': '1145031842', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '10'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695363', 'classid': '1442537261', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '34'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418559513552', 'classid': '1368635034', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '33'}], 'is_our_offer': True, 'time_created': 1686861133, 'time_updated': 1686861198, 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6139083159', 'accountid_other': 349701530, 'message': 'yuppie!', 'expiration_time': 1688070575, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4245248616177850301', 'classid': '1368658386', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '33'}], 'is_our_offer': True, 'time_created': 1686860975, 'time_updated': 1686861010, 'tradeid': '7025100018846630054', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6137079968', 'accountid_other': 349701530, 'message': 'yuppie!', 'expiration_time': 1687997370, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4245248616177850277', 'classid': '1150162590', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '28'}], 'is_our_offer': True, 'time_created': 1686787770, 'time_updated': 1686787812, 'tradeid': '7025100018843520434', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6135234316', 'accountid_other': 1158307459, 'message': 'yuppie!', 'expiration_time': 1687929124, 'trade_offer_state': 7, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4256511418559513549', 'classid': '2038145408', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '168'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695366', 'classid': '1145031842', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '10'}, {'appid': 252490, 'contextid': '2', 'assetid': '4256511418539695363', 'classid': '1442537261', 'instanceid': '0', 'amount': '1', 'missing': False, 'est_usd': '35'}], 'is_our_offer': True, 'time_created': 1686719524, 'time_updated': 1686720355, 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}, {'tradeofferid': '6135222267', 'accountid_other': 349701530, 'message': 'yuppie!', 'expiration_time': 1687928546, 'trade_offer_state': 3, 'items_to_receive': [{'appid': 252490, 'contextid': '2', 'assetid': '4245248616177850308', 'classid': '2847489385', 'instanceid': '0', 'amount': '1', 'missing': True, 'est_usd': '104'}], 'is_our_offer': True, 'time_created': 1686718946, 'time_updated': 1686718976, 'tradeid': '4731641813612370013', 'from_real_time_trade': False, 'escrow_end_date': 0, 'confirmation_method': 0, 'eresult': 1}], 'next_cursor': 0}}
+2023-06-29 07:31:11,452:INFO:steam.state: Received trade #6157454086
+2023-06-29 07:31:11,577:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561198309967258 with PAYLOAD: None has returned 200
+2023-06-29 07:31:11,577:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561198309967258 has received {'response': {'players': [{'steamid': '76561198309967258', 'communityvisibilitystate': 3, 'profilestate': 1, 'personaname': 'And Dee', 'commentpermission': 1, 'profileurl': 'https://steamcommunity.com/id/incomingGoat/', 'avatar': 'https://avatars.steamstatic.com/efbade49333bc76fbaa5924402bc4596c1308c4d.jpg', 'avatarmedium': 'https://avatars.steamstatic.com/efbade49333bc76fbaa5924402bc4596c1308c4d_medium.jpg', 'avatarfull': 'https://avatars.steamstatic.com/efbade49333bc76fbaa5924402bc4596c1308c4d_full.jpg', 'avatarhash': 'efbade49333bc76fbaa5924402bc4596c1308c4d', 'personastate': 0, 'realname': 'mom', 'primaryclanid': '103582791460851463', 'timecreated': 1465431609, 'personastateflags': 0}]}}
+2023-06-29 07:31:11,577:INFO:steam.state: Received trade #6139222868
+2023-06-29 07:31:11,608:DEBUG:steam.http: GET https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v1?cellid=0&cmtype=websockets with PAYLOAD: None has returned 200
+2023-06-29 07:31:11,608:DEBUG:steam.http: GET https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v1?cellid=0&cmtype=websockets has received {'response': {'serverlist': [{'endpoint': 'ext2-iad1.steamserver.net:27032', 'legacy_endpoint': 'ext2-iad1.steamserver.net:27032', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 49.165263652801514}, {'endpoint': 'ext2-iad1.steamserver.net:27021', 'legacy_endpoint': 'ext2-iad1.steamserver.net:27021', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 49.314802169799805}, {'endpoint': 'ext4-iad1.steamserver.net:27029', 'legacy_endpoint': 'ext4-iad1.steamserver.net:27029', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 50.4555549621582}, {'endpoint': 'ext1-iad1.steamserver.net:27021', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27021', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 50.63876008987427}, {'endpoint': 'ext1-iad1.steamserver.net:27036', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27036', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 50.77029991149902}, {'endpoint': 'ext1-iad1.steamserver.net:443', 'legacy_endpoint': 'ext1-iad1.steamserver.net:443', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 50.843236446380615}, {'endpoint': 'ext1-iad1.steamserver.net:27022', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27022', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 50.8456015586853}, {'endpoint': 'ext2-iad1.steamserver.net:27025', 'legacy_endpoint': 'ext2-iad1.steamserver.net:27025', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 51.41968393325806}, {'endpoint': 'ext1-iad1.steamserver.net:27028', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27028', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 51.636382818222046}, {'endpoint': 'ext4-iad1.steamserver.net:27034', 'legacy_endpoint': 'ext4-iad1.steamserver.net:27034', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 51.643553733825684}, {'endpoint': 'ext4-iad1.steamserver.net:27030', 'legacy_endpoint': 'ext4-iad1.steamserver.net:27030', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 51.99543762207031}, {'endpoint': 'ext3-iad1.steamserver.net:27019', 'legacy_endpoint': 'ext3-iad1.steamserver.net:27019', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 52.64647436141968}, {'endpoint': 'ext1-iad1.steamserver.net:27037', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27037', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 52.70709204673767}, {'endpoint': 'ext4-iad1.steamserver.net:443', 'legacy_endpoint': 'ext4-iad1.steamserver.net:443', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 52.940553188323975}, {'endpoint': 'ext2-iad1.steamserver.net:27030', 'legacy_endpoint': 'ext2-iad1.steamserver.net:27030', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 53.48981285095215}, {'endpoint': 'ext1-iad1.steamserver.net:27029', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27029', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 53.52618598937988}, {'endpoint': 'ext1-iad1.steamserver.net:27019', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27019', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 53.538466572761536}, {'endpoint': 'ext1-iad1.steamserver.net:27030', 'legacy_endpoint': 'ext1-iad1.steamserver.net:27030', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 53.64196491241455}, {'endpoint': 'ext3-iad1.steamserver.net:27023', 'legacy_endpoint': 'ext3-iad1.steamserver.net:27023', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 54.02001428604126}, {'endpoint': 'ext4-iad1.steamserver.net:27038', 'legacy_endpoint': 'ext4-iad1.steamserver.net:27038', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 54.02001702785492}, {'endpoint': 'ext2-ord1.steamserver.net:27024', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27024', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 54.030993938446045}, {'endpoint': 'ext2-iad1.steamserver.net:443', 'legacy_endpoint': 'ext2-iad1.steamserver.net:443', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 55.8414751291275}, {'endpoint': 'ext3-iad1.steamserver.net:443', 'legacy_endpoint': 'ext3-iad1.steamserver.net:443', 'type': 'websockets', 'dc': 'iad1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 57.17585289478302}, {'endpoint': 'ext1-ord1.steamserver.net:27023', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27023', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 57.2593719959259}, {'endpoint': 'ext2-ord1.steamserver.net:27037', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27037', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 23, 'wtd_load': 58.73222637176514}, {'endpoint': 'ext2-ord1.steamserver.net:443', 'legacy_endpoint': 'ext2-ord1.steamserver.net:443', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 22, 'wtd_load': 58.81454277038574}, {'endpoint': 'ext2-ord1.steamserver.net:27034', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27034', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 22, 'wtd_load': 59.54190015792847}, {'endpoint': 'ext2-ord1.steamserver.net:27035', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27035', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 23, 'wtd_load': 59.63508105278015}, {'endpoint': 'ext1-ord1.steamserver.net:27028', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27028', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 59.94625532627106}, {'endpoint': 'ext2-ord1.steamserver.net:27022', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27022', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 23, 'wtd_load': 60.024203300476074}, {'endpoint': 'ext1-ord1.steamserver.net:27038', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27038', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 23, 'wtd_load': 60.071892738342285}, {'endpoint': 'ext1-ord1.steamserver.net:27029', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27029', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 22, 'wtd_load': 60.10611009597778}, {'endpoint': 'ext1-ord1.steamserver.net:27031', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27031', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 22, 'wtd_load': 60.43576729297638}, {'endpoint': 'ext2-ord1.steamserver.net:27025', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27025', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 61.41727939248085}, {'endpoint': 'ext2-ord1.steamserver.net:27038', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27038', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 61.59086751937866}, {'endpoint': 'ext2-ord1.steamserver.net:27019', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27019', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 61.666850090026855}, {'endpoint': 'ext1-ord1.steamserver.net:27030', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27030', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 61.752155900001526}, {'endpoint': 'ext1-ord1.steamserver.net:27034', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27034', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 62.088879346847534}, {'endpoint': 'ext1-ord1.steamserver.net:443', 'legacy_endpoint': 'ext1-ord1.steamserver.net:443', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 22, 'wtd_load': 62.181649535894394}, {'endpoint': 'ext2-ord1.steamserver.net:27021', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27021', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 23, 'wtd_load': 62.21147704124451}, {'endpoint': 'ext2-ord1.steamserver.net:27020', 'legacy_endpoint': 'ext2-ord1.steamserver.net:27020', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 23, 'wtd_load': 62.644422858953476}, {'endpoint': 'ext1-ord1.steamserver.net:27036', 'legacy_endpoint': 'ext1-ord1.steamserver.net:27036', 'type': 'websockets', 'dc': 'ord1', 'realm': 'steamglobal', 'load': 22, 'wtd_load': 62.86136043071747}, {'endpoint': 'ext1-sea1.steamserver.net:27023', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27023', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 90.78439331054688}, {'endpoint': 'ext1-sea1.steamserver.net:27026', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27026', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 92.03089690208435}, {'endpoint': 'ext1-dfw1.steamserver.net:27023', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27023', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 92.28209114074707}, {'endpoint': 'ext1-dfw1.steamserver.net:27038', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27038', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 92.34221601486206}, {'endpoint': 'ext2-dfw1.steamserver.net:27020', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27020', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 92.37706708908081}, {'endpoint': 'ext1-sea1.steamserver.net:27025', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27025', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 16, 'wtd_load': 92.57940983772278}, {'endpoint': 'ext1-sea1.steamserver.net:27020', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27020', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 92.66449093818665}, {'endpoint': 'ext2-dfw1.steamserver.net:27028', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27028', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 18, 'wtd_load': 92.66922187805176}, {'endpoint': 'ext1-sea1.steamserver.net:27019', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27019', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 93.2107959985733}, {'endpoint': 'ext2-dfw1.steamserver.net:27032', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27032', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 93.62041783332825}, {'endpoint': 'ext1-dfw1.steamserver.net:27030', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27030', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 93.94701218605042}, {'endpoint': 'ext2-dfw1.steamserver.net:27021', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27021', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 94.12975645065308}, {'endpoint': 'ext1-sea1.steamserver.net:27022', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27022', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 94.30041897296906}, {'endpoint': 'ext2-sea1.steamserver.net:27030', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27030', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 20, 'wtd_load': 94.85762596130371}, {'endpoint': 'ext1-dfw1.steamserver.net:27035', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27035', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 95.38981795310974}, {'endpoint': 'ext1-sea1.steamserver.net:27021', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27021', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 95.56096345186234}, {'endpoint': 'ext2-dfw1.steamserver.net:27034', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27034', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 95.66749930381775}, {'endpoint': 'ext1-dfw1.steamserver.net:27019', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27019', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 95.7128758430481}, {'endpoint': 'ext2-dfw1.steamserver.net:27035', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27035', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 18, 'wtd_load': 95.80122709274292}, {'endpoint': 'ext2-sea1.steamserver.net:27032', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27032', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 20, 'wtd_load': 95.8661789894104}, {'endpoint': 'ext2-dfw1.steamserver.net:27031', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27031', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 95.90806746482849}, {'endpoint': 'ext1-dfw1.steamserver.net:27024', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27024', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 95.99920642375946}, {'endpoint': 'ext2-sea1.steamserver.net:27028', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27028', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 96.15154647827148}, {'endpoint': 'ext1-sea1.steamserver.net:27024', 'legacy_endpoint': 'ext1-sea1.steamserver.net:27024', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 15, 'wtd_load': 96.28155660629272}, {'endpoint': 'ext2-sea1.steamserver.net:27020', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27020', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 20, 'wtd_load': 96.45621824264526}, {'endpoint': 'ext1-dfw1.steamserver.net:27021', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27021', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 96.47254639863968}, {'endpoint': 'ext2-dfw1.steamserver.net:27025', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27025', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 96.92069090902805}, {'endpoint': 'ext1-dfw1.steamserver.net:27028', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27028', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 96.92197201400995}, {'endpoint': 'ext2-dfw1.steamserver.net:27024', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:27024', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 18, 'wtd_load': 97.0335128903389}, {'endpoint': 'ext1-dfw1.steamserver.net:443', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:443', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 97.53925484418869}, {'endpoint': 'ext1-dfw1.steamserver.net:27022', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27022', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 97.97667634487152}, {'endpoint': 'ext1-dfw1.steamserver.net:27020', 'legacy_endpoint': 'ext1-dfw1.steamserver.net:27020', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 17, 'wtd_load': 98.03341746330261}, {'endpoint': 'ext2-dfw1.steamserver.net:443', 'legacy_endpoint': 'ext2-dfw1.steamserver.net:443', 'type': 'websockets', 'dc': 'dfw1', 'realm': 'steamglobal', 'load': 18, 'wtd_load': 98.57262635231018}, {'endpoint': 'ext2-sea1.steamserver.net:27034', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27034', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 20, 'wtd_load': 98.74537789821625}, {'endpoint': 'ext2-sea1.steamserver.net:27033', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27033', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 20, 'wtd_load': 98.89244616031647}, {'endpoint': 'ext2-sea1.steamserver.net:27024', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27024', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 22, 'wtd_load': 99.17563390731812}, {'endpoint': 'ext2-sea1.steamserver.net:27029', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27029', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 99.19230484962463}, {'endpoint': 'ext2-sea1.steamserver.net:27037', 'legacy_endpoint': 'ext2-sea1.steamserver.net:27037', 'type': 'websockets', 'dc': 'sea1', 'realm': 'steamglobal', 'load': 21, 'wtd_load': 99.50251841545105}], 'success': True, 'message': ''}}
+2023-06-29 07:31:11,608:DEBUG:steam.gateway: Received 80 servers from WebAPI
+2023-06-29 07:31:11,608:INFO:steam.gateway: Attempting to create a websocket connection to: CMServer(_state=<steam.state.ConnectionState object at 0x00000176FD3BFC00>, url='ext2-iad1.steamserver.net:27032', weighted_load=49.165263652801514)
+2023-06-29 07:31:11,758:DEBUG:steam.gateway: Connected to CMServer(_state=<steam.state.ConnectionState object at 0x00000176FD3BFC00>, url='ext2-iad1.steamserver.net:27032', weighted_load=49.165263652801514)
+2023-06-29 07:31:11,765:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:11,770:DEBUG:steam.client: Dispatching event connect
+2023-06-29 07:31:11,770:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561199118573187 with PAYLOAD: None has returned 200
+2023-06-29 07:31:11,770:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561199118573187 has received {'response': {'players': [{'steamid': '76561199118573187', 'communityvisibilitystate': 3, 'profilestate': 1, 'personaname': 'bipslegal', 'profileurl': 'https://steamcommunity.com/profiles/76561199118573187/', 'avatar': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg', 'avatarmedium': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg', 'avatarfull': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg', 'avatarhash': 'fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb', 'personastate': 1, 'primaryclanid': '103582791429521408', 'timecreated': 1608212340, 'personastateflags': 0}]}}
+2023-06-29 07:31:11,770:INFO:steam.state: Received trade #6139221147
+2023-06-29 07:31:11,770:INFO:steam.state: Received trade #6139219544
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6139217410
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6139155198
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6139152764
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6139114049
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6139086360
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6139083159
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6137079968
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6135234316
+2023-06-29 07:31:11,771:INFO:steam.state: Received trade #6135222267
+2023-06-29 07:31:11,931:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.Multi: 1> header=<MsgHdrProto msg=<EMsg.Multi: 1> length=8> size_unzipped=355 message_body='H4sIAAAAAAAA/63QvwsBYRgH8Oc55E7RoyijbJQfi9KZJLvBH2DQLbfIQKkTSooyGam71XgmG5tkZ+M/MJgYnPeeMiqDd/i89db7fJ/naQOAEYV+RNxK7NSsIBDSZm3OX444GJBkT8ArJwmEKTbBRsl9SbN5tsh22DBLrMqG2CyhqKOJCPXnZPfHP5LdfjUCUnUAuEnfZ5aRlJgSt3fPu5w29GUjNxpYWIjUxUIcfwu6vqBt9mZDlKo1Cz9LW6FULm0R9ghnvCwOx/Fk+shcEd6tUENBYwEAAA=='> from the websocket.
+2023-06-29 07:31:11,931:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:11,931:DEBUG:steam.gateway: Received a multi
+2023-06-29 07:31:11,932:DEBUG:steam.gateway: Decompressing payload (217 -> 355)
+2023-06-29 07:31:11,932:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientServersAvailable: 5501> header=<MsgHdrProto msg=<EMsg.ClientServersAvailable: 5501> length=28 steam_id='76561199125288728' session_id=-494396999> server_types_available=[{'server': 3}, {'server': 41}, {'server': 42}, {'server': 34}, {'server': 21}, {'server': 45}, {'server': 53}, {'server': 59}, {'server': 119}, {'server': 17}, {'server': 16}, {'server': 58}, {'server': 14}, {'server': 47, 'changed': True}, {'server': 102, 'changed': True}] server_type_for_auth_services=58> from the websocket.
+2023-06-29 07:31:11,933:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:11,933:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientServersAvailable: 5501> header=<MsgHdrProto msg=<EMsg.ClientServersAvailable: 5501> length=28 steam_id='76561199125288728' session_id=-494396999> server_types_available=[{'server': 3}, {'server': 41}, {'server': 42}, {'server': 34}, {'server': 21}, {'server': 45}, {'server': 53}, {'server': 59}, {'server': 119}, {'server': 17}, {'server': 16}, {'server': 58}, {'server': 14}, {'server': 47, 'changed': True}, {'server': 102, 'changed': True}] server_type_for_auth_services=58>
+2023-06-29 07:31:11,933:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientServersAvailable: 5501> header=<MsgHdrProto msg=<EMsg.ClientServersAvailable: 5501> length=28 steam_id='76561199125288728' session_id=-494396999> server_types_available=[{'server': 3}, {'server': 41, 'changed': True}, {'server': 42}, {'server': 34}, {'server': 21}, {'server': 45}, {'server': 53}, {'server': 59}, {'server': 119}, {'server': 17}, {'server': 16}, {'server': 58}, {'server': 14}, {'server': 47}, {'server': 102}] server_type_for_auth_services=58> from the websocket.
+2023-06-29 07:31:11,934:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:11,934:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientServersAvailable: 5501> header=<MsgHdrProto msg=<EMsg.ClientServersAvailable: 5501> length=28 steam_id='76561199125288728' session_id=-494396999> server_types_available=[{'server': 3}, {'server': 41, 'changed': True}, {'server': 42}, {'server': 34}, {'server': 21}, {'server': 45}, {'server': 53}, {'server': 59}, {'server': 119}, {'server': 17}, {'server': 16}, {'server': 58}, {'server': 14}, {'server': 47}, {'server': 102}] server_type_for_auth_services=58>
+2023-06-29 07:31:11,936:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientLogOnResponse: 751> header=<MsgHdrProto msg=<EMsg.ClientLogOnResponse: 751> length=28 steam_id='76561199125288728' session_id=-494396999> eresult=1 out_of_game_heartbeat_seconds=9 in_game_heartbeat_seconds=9 deprecated_public_ip=2390663346 rtime32_server_time=1688038269 account_flags=2637957 cell_id=20 cell_id_ping_threshold=2147483647 public_ip={'v4': 2390663346} client_supplied_steamid='76561199125288728' ip_country_code='CA' client_instance_id='3382814994257317471'> from the websocket.
+2023-06-29 07:31:11,936:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:11,936:DEBUG:steam.gateway: Heartbeat started.
+2023-06-29 07:31:11,936:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:11,937:DEBUG:steam.gateway: Sending <MsgProto msg=<EMsg.ClientChangeStatus: 716> header=<MsgHdrProto msg=<EMsg.ClientChangeStatus: 716> length=0> persona_state=<PersonaState.Online: 1>> to change state
+2023-06-29 07:31:11,937:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:11,960:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:11,960:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:11,960:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:11,961:DEBUG:steam.gateway: Logon completed
+2023-06-29 07:31:11,979:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.Multi: 1> header=<MsgHdrProto msg=<EMsg.Multi: 1> length=8> message_body='TQAAAJIAAIBFAAAACRjXcEUBABABELmzoJT+/////wFiL1N0ZWFtTm90aWZpY2F0aW9uQ2xpZW50Lk5vdGlmaWNhdGlvbnNSZWNlaXZlZCMx'> from the websocket.
+2023-06-29 07:31:11,979:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:11,979:DEBUG:steam.gateway: Received a multi
+2023-06-29 07:31:11,979:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ServiceMethod: 146> header=<MsgHdrProto msg=<EMsg.ServiceMethod: 146> length=77 steam_id='76561199125288728' session_id=-494396999 job_name_target='SteamNotificationClient.NotificationsReceived'>> from the websocket.
+2023-06-29 07:31:11,979:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:11,979:DEBUG:steam.state: Got an event 'SteamNotificationClient.NotificationsReceived' that we don't handle None
+2023-06-29 07:31:11,993:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientServerTimestampResponse: 9803> header=<MsgHdrProto msg=<EMsg.ClientServerTimestampResponse: 9803> length=8> client_request_timestamp='1688038271960' server_timestamp_ms='1688038270147'> from the websocket.
+2023-06-29 07:31:11,993:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,030:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.Multi: 1> header=<MsgHdrProto msg=<EMsg.Multi: 1> length=8> size_unzipped=892 message_body='H4sIAAAAAAAA/32STUhUURiG33NnoHMnidNtblhhDFY0GuUUGDJJ9kPhKgaKGKKwZFBjghnSui2auFKBLSKkgv40B0RRcXBQEXHhQsQfEFw5q1nIKPizUHf+65kDigeZexbPgZfv/d7zcb5C8GOD6eSXmp0I3yNghPV3N/3Y3uGHONTy1y+rg9XGi0pNuXvbnVv0uTZK6gjxAvDpyGx07htvhd7UvAqFglfCNYxkw0Xc5CyAHSWzmyLJK7IsHkaJVkIHpzU99WmpLIcXwwU3PCYpMu13FN+jUuKDP973U33+KzbUYa9CGO9gEtSRxoHhxrYvDf/82k06taXo8dGSgNQA+/7Z2B/1kH98bHWuJTWyEtSKKfSHH6V4mo6HCF/8/fewuSeaiJnJb2vfyTqAo1YDOjTnmfjgk8jCuf97H/Mh2BDQnJEJI6ujPuexrBbMXMxTZ5c7ZXUm0RsoXi4/Iqu1FeuBkfprrbJ6sgye00bygaxGr6b8rZUn7stqc377pfep0meyurKpeBKOp72y2rXRb0x+PTV/UD3Pp79usT4UDOlV8QKosqhz2CkYOImgImgTtDO4AJgXMq9ZOuMtr4lYJSjUxvvniZ75grmCOkvnXhYsFLwhaAgeF2SCXsFjggWCFQzMuwuPVonJfAMAAA=='> from the websocket.
+2023-06-29 07:31:12,030:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,030:DEBUG:steam.gateway: Received a multi
+2023-06-29 07:31:12,030:DEBUG:steam.gateway: Decompressing payload (496 -> 892)
+2023-06-29 07:31:12,030:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientAccountInfo: 768> header=<MsgHdrProto msg=<EMsg.ClientAccountInfo: 768> length=28 steam_id='76561199125288728' session_id=-494396999> persona_name='briskswag' ip_country='CA' count_authed_computers=34 account_flags=2637957 two_factor_state=1> from the websocket.
+2023-06-29 07:31:12,031:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,031:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientEmailAddrInfo: 5456> header=<MsgHdrProto msg=<EMsg.ClientEmailAddrInfo: 5456> length=28 steam_id='76561199125288728' session_id=-494396999> email_address='briskswag@outlook.pt' email_is_validated=True credential_change_requires_code=True password_or_secretqa_change_requires_code=True> from the websocket.
+2023-06-29 07:31:12,031:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,031:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientEmailAddrInfo: 5456> header=<MsgHdrProto msg=<EMsg.ClientEmailAddrInfo: 5456> length=28 steam_id='76561199125288728' session_id=-494396999> email_address='briskswag@outlook.pt' email_is_validated=True credential_change_requires_code=True password_or_secretqa_change_requires_code=True>
+2023-06-29 07:31:12,032:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientFriendsList: 767> header=<MsgHdrProto msg=<EMsg.ClientFriendsList: 767> length=28 steam_id='76561199125288728' session_id=-494396999>> from the websocket.
+2023-06-29 07:31:12,032:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,033:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientLicenseList: 780> header=<MsgHdrProto msg=<EMsg.ClientLicenseList: 780> length=28 steam_id='76561199125288728' session_id=-494396999> eresult=1 licenses=[{'package_id': 307391, 'time_created': 1609532643, 'payment_method': 128, 'flags': 512, 'purchase_country_code': 'PT', 'license_type': 1, 'change_number': 19225521, 'owner_id': 1165023000, 'access_token': '6356958737689828766'}, {'package_id': 48854, 'time_created': 1681901745, 'payment_method': 128, 'purchase_country_code': 'PT', 'license_type': 1, 'change_number': 19306341, 'owner_id': 1165023000, 'access_token': '7774091580131910858'}, {'time_created': 1609532243, 'payment_method': 1024, 'flags': 512, 'license_type': 1, 'change_number': 19320043, 'owner_id': 1165023000, 'access_token': '10660652434190618804'}]> from the websocket.
+2023-06-29 07:31:12,033:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,034:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientGameConnectTokens: 779> header=<MsgHdrProto msg=<EMsg.ClientGameConnectTokens: 779> length=28 steam_id='76561199125288728' session_id=-494396999> max_tokens_to_keep=10 tokens=['G7G/Wn3qI58Y13BFAQAQAX5rnWQ=', 'fc13DKuRHVYY13BFAQAQAX5rnWQ=', 'L+QnKQnl8K0Y13BFAQAQAX5rnWQ=', '5Ne1ZDzwYgcY13BFAQAQAX5rnWQ=', 'gWb6ZMeRMqcY13BFAQAQAX5rnWQ=', 'Fl8AMBp33U4Y13BFAQAQAX5rnWQ=', 'oTHjWKdnE0YY13BFAQAQAX5rnWQ=', 'pCqqK3zjSF0Y13BFAQAQAX5rnWQ=', '8fwCMNcKXLUY13BFAQAQAX5rnWQ=', 'sPu5d9CNGekY13BFAQAQAX5rnWQ=']> from the websocket.
+2023-06-29 07:31:12,034:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,034:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientGameConnectTokens: 779> header=<MsgHdrProto msg=<EMsg.ClientGameConnectTokens: 779> length=28 steam_id='76561199125288728' session_id=-494396999> max_tokens_to_keep=10 tokens=['G7G/Wn3qI58Y13BFAQAQAX5rnWQ=', 'fc13DKuRHVYY13BFAQAQAX5rnWQ=', 'L+QnKQnl8K0Y13BFAQAQAX5rnWQ=', '5Ne1ZDzwYgcY13BFAQAQAX5rnWQ=', 'gWb6ZMeRMqcY13BFAQAQAX5rnWQ=', 'Fl8AMBp33U4Y13BFAQAQAX5rnWQ=', 'oTHjWKdnE0YY13BFAQAQAX5rnWQ=', 'pCqqK3zjSF0Y13BFAQAQAX5rnWQ=', '8fwCMNcKXLUY13BFAQAQAX5rnWQ=', 'sPu5d9CNGekY13BFAQAQAX5rnWQ=']>
+2023-06-29 07:31:12,034:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientIsLimitedAccount: 5430> header=<MsgHdrProto msg=<EMsg.ClientIsLimitedAccount: 5430> length=28 steam_id='76561199125288728' session_id=-494396999> bis_limited_account_allowed_to_invite_friends=True> from the websocket.
+2023-06-29 07:31:12,034:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,034:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientIsLimitedAccount: 5430> header=<MsgHdrProto msg=<EMsg.ClientIsLimitedAccount: 5430> length=28 steam_id='76561199125288728' session_id=-494396999> bis_limited_account_allowed_to_invite_friends=True>
+2023-06-29 07:31:12,035:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientRequestedClientStats: 5480> header=<MsgHdrProto msg=<EMsg.ClientRequestedClientStats: 5480> length=28 steam_id='76561199125288728' session_id=-494396999> stats_to_send=[{}, {'client_stat': 1}, {'client_stat': 2}, {'client_stat': 3}, {'client_stat': 4}]> from the websocket.
+2023-06-29 07:31:12,035:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,035:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientRequestedClientStats: 5480> header=<MsgHdrProto msg=<EMsg.ClientRequestedClientStats: 5480> length=28 steam_id='76561199125288728' session_id=-494396999> stats_to_send=[{}, {'client_stat': 1}, {'client_stat': 2}, {'client_stat': 3}, {'client_stat': 4}]>
+2023-06-29 07:31:12,035:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientPlayingSessionState: 9600> header=<MsgHdrProto msg=<EMsg.ClientPlayingSessionState: 9600> length=28 steam_id='76561199125288728' session_id=-494396999>> from the websocket.
+2023-06-29 07:31:12,036:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,036:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientPlayingSessionState: 9600> header=<MsgHdrProto msg=<EMsg.ClientPlayingSessionState: 9600> length=28 steam_id='76561199125288728' session_id=-494396999>>
+2023-06-29 07:31:12,036:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientServersAvailable: 5501> header=<MsgHdrProto msg=<EMsg.ClientServersAvailable: 5501> length=28 steam_id='76561199125288728' session_id=-494396999> server_types_available=[{'server': 3}, {'server': 41}, {'server': 42}, {'server': 34}, {'server': 21}, {'server': 45}, {'server': 53}, {'server': 59}, {'server': 119}, {'server': 17}, {'server': 16}, {'server': 58}, {'server': 14}, {'server': 47}, {'server': 102}] server_type_for_auth_services=58> from the websocket.
+2023-06-29 07:31:12,037:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,037:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientServersAvailable: 5501> header=<MsgHdrProto msg=<EMsg.ClientServersAvailable: 5501> length=28 steam_id='76561199125288728' session_id=-494396999> server_types_available=[{'server': 3}, {'server': 41}, {'server': 42}, {'server': 34}, {'server': 21}, {'server': 45}, {'server': 53}, {'server': 59}, {'server': 119}, {'server': 17}, {'server': 16}, {'server': 58}, {'server': 14}, {'server': 47}, {'server': 102}] server_type_for_auth_services=58>
+2023-06-29 07:31:12,079:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.Multi: 1> header=<MsgHdrProto msg=<EMsg.Multi: 1> length=8> message_body='RwAAAJMAAIA/AAAACRjXcEUBABABELmzoJT+/////wFZAQAAAAAAAABiHkNoYXRSb29tLkdldE15Q2hhdFJvb21Hcm91cHMjMWgB'> from the websocket.
+2023-06-29 07:31:12,080:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,080:DEBUG:steam.gateway: Received a multi
+2023-06-29 07:31:12,080:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ServiceMethodResponse: 147> header=<MsgHdrProto msg=<EMsg.ServiceMethodResponse: 147> length=71 steam_id='76561199125288728' session_id=-494396999 job_id_target='1' job_name_target='ChatRoom.GetMyChatRoomGroups' eresult=1>> from the websocket.
+2023-06-29 07:31:12,080:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,131:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.Multi: 1> header=<MsgHdrProto msg=<EMsg.Multi: 1> length=8> message_body='IAAAALEVAIAUAAAACRjXcEUBABABELmzoJT+/////wEIABAA'> from the websocket.
+2023-06-29 07:31:12,131:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,131:DEBUG:steam.gateway: Received a multi
+2023-06-29 07:31:12,131:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientFriendsGroupsList: 5553> header=<MsgHdrProto msg=<EMsg.ClientFriendsGroupsList: 5553> length=28 steam_id='76561199125288728' session_id=-494396999>> from the websocket.
+2023-06-29 07:31:12,132:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,132:DEBUG:steam.gateway: Ignoring event <MsgProto msg=<EMsg.ClientFriendsGroupsList: 5553> header=<MsgHdrProto msg=<EMsg.ClientFriendsGroupsList: 5553> length=28 steam_id='76561199125288728' session_id=-494396999>>
+2023-06-29 07:31:12,230:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.Multi: 1> header=<MsgHdrProto msg=<EMsg.Multi: 1> length=8> size_unzipped=414 message_body='H4sIAAAAAAAA/3WOvU4CQRSF711+IlejKyFCYuwsLCkNvQ8yCyu7gWUnzBKiseAdtDYUvIGVdpa8gJYmkiglCSHZkLAwm2EGGm5z55zvzMl9BYDEgkFJ7kLlm98h2Gi/vw1fkrUcPPr5w+LTjmAFqnCLjwWn64uW6LPmGGE7S0xbtmK3ptbz5H+Un1mrr8UoHyv1kYHPjM78SpHVYmxecRYGOYglENeHL6QSndRE5LLACbtuo2bjDVSBynSm3HtWdzlrBxqYuMc4f9DuBZ2qeBDWW36nqf0ikfIFM9WmQbB2ZBrKdKySkeeL9PtwPkly8pIrOtegFziiEfY7+/hSHxp5Ke7xPbgBXF1vsZ4BAAA='> from the websocket.
+2023-06-29 07:31:12,230:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,230:DEBUG:steam.gateway: Received a multi
+2023-06-29 07:31:12,230:DEBUG:steam.gateway: Decompressing payload (272 -> 414)
+2023-06-29 07:31:12,233:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientPersonaState: 766> header=<MsgHdrProto msg=<EMsg.ClientPersonaState: 766> length=28 steam_id='76561199125288728' session_id=-494396999> status_flags=29535 friends=[{'friendid': '76561199125288728', 'persona_state': 1, 'online_session_instances': 1, 'player_name': 'briskswag', 'avatar_hash': 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 'last_logoff': 1687810451, 'last_logon': 1688038269, 'last_seen_online': 1687810451}]> from the websocket.
+2023-06-29 07:31:12,233:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,234:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientEmoticonList: 9331> header=<MsgHdrProto msg=<EMsg.ClientEmoticonList: 9331> length=28 steam_id='76561199125288728' session_id=-494396999> emoticons=[{'name': ':steambored:', 'count': 1}, {'name': ':steamfacepalm:', 'count': 1}, {'name': ':steamhappy:', 'count': 1}, {'name': ':steammocking:', 'count': 1}, {'name': ':steamsad:', 'count': 1}, {'name': ':steamsalty:', 'count': 1}, {'name': ':steamthis:', 'count': 1, 'time_received': 1608055200}, {'name': ':steamthumbsdown:', 'count': 1, 'time_received': 1608055200}, {'name': ':steamthumbsup:', 'count': 1, 'time_received': 1608055200}]> from the websocket.
+2023-06-29 07:31:12,235:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:12,270:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561199125288728 with PAYLOAD: None has returned 200
+2023-06-29 07:31:12,270:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561199125288728 has received {'response': {'players': [{'steamid': '76561199125288728', 'communityvisibilitystate': 3, 'personaname': 'briskswag', 'profileurl': 'https://steamcommunity.com/profiles/76561199125288728/', 'avatar': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg', 'avatarmedium': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg', 'avatarfull': 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg', 'avatarhash': 'fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb', 'lastlogoff': 1687810451, 'personastate': 1, 'primaryclanid': '103582791429521408', 'timecreated': 1609532243, 'personastateflags': 0}]}}
+2023-06-29 07:31:12,270:DEBUG:steam.client: Dispatching event ready
+2023-06-29 07:31:20,938:DEBUG:steam.gateway: Keeping websocket alive with heartbeat <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=0> send_reply=True>.
+2023-06-29 07:31:20,939:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:20,979:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=19 session_id=-494396999>> from the websocket.
+2023-06-29 07:31:20,979:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:29,956:DEBUG:steam.gateway: Keeping websocket alive with heartbeat <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=20 steam_id='76561199125288728' session_id=-494396999> send_reply=True>.
+2023-06-29 07:31:29,956:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:29,992:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=19 session_id=-494396999>> from the websocket.
+2023-06-29 07:31:29,992:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:38,968:DEBUG:steam.gateway: Keeping websocket alive with heartbeat <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=20 steam_id='76561199125288728' session_id=-494396999> send_reply=True>.
+2023-06-29 07:31:38,968:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:39,001:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=19 session_id=-494396999>> from the websocket.
+2023-06-29 07:31:39,001:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:39,908:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561198309967258 with PAYLOAD: None has returned 200
+2023-06-29 07:31:39,908:DEBUG:steam.http: GET https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2?key=EE62127D7030A8E00982B348B76B7E88&steamids=76561198309967258 has received {'response': {'players': [{'steamid': '76561198309967258', 'communityvisibilitystate': 3, 'profilestate': 1, 'personaname': 'And Dee', 'commentpermission': 1, 'profileurl': 'https://steamcommunity.com/id/incomingGoat/', 'avatar': 'https://avatars.steamstatic.com/efbade49333bc76fbaa5924402bc4596c1308c4d.jpg', 'avatarmedium': 'https://avatars.steamstatic.com/efbade49333bc76fbaa5924402bc4596c1308c4d_medium.jpg', 'avatarfull': 'https://avatars.steamstatic.com/efbade49333bc76fbaa5924402bc4596c1308c4d_full.jpg', 'avatarhash': 'efbade49333bc76fbaa5924402bc4596c1308c4d', 'personastate': 0, 'realname': 'mom', 'primaryclanid': '103582791460851463', 'timecreated': 1465431609, 'personastateflags': 0}]}}
+2023-06-29 07:31:47,976:DEBUG:steam.gateway: Keeping websocket alive with heartbeat <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=20 steam_id='76561199125288728' session_id=-494396999> send_reply=True>.
+2023-06-29 07:31:47,976:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:48,010:DEBUG:steam.gateway: Socket has received <MsgProto msg=<EMsg.ClientHeartBeat: 703> header=<MsgHdrProto msg=<EMsg.ClientHeartBeat: 703> length=19 session_id=-494396999>> from the websocket.
+2023-06-29 07:31:48,010:DEBUG:steam.client: Dispatching event socket_receive
+2023-06-29 07:31:52,359:DEBUG:steam.gateway: Sending <MsgProto msg=<EMsg.ClientGamesPlayedWithDataBlob: 5410> header=<MsgHdrProto msg=<EMsg.ClientGamesPlayedWithDataBlob: 5410> length=0> games_played=[{}]> to change activity
+2023-06-29 07:31:52,359:DEBUG:steam.client: Dispatching event socket_send
+2023-06-29 07:31:52,359:DEBUG:steam.gateway: Received WSMessage(type=<WSMsgType.CLOSING: 256>, data=None, extra=None)
+2023-06-29 07:31:52,360:INFO:steam.gateway: Websocket closed, cannot reconnect.
+2023-06-29 07:31:52,360:DEBUG:steam.client: Dispatching event disconnect
+2023-06-29 07:31:52,360:INFO:steam.gateway: Websocket closed, cannot reconnect.
+2023-06-29 07:31:52,360:DEBUG:steam.http: Logging out of session
+2023-06-29 07:31:52,639:DEBUG:steam.http: POST https://steamcommunity.com/login/logout with PAYLOAD: {'sessionid': '3b2e34722da277d566c5191b'} has returned 200
+2023-06-29 07:31:52,639:DEBUG:steam.http: POST https://steamcommunity.com/login/logout has received <!DOCTYPE html>
+<html class=" responsive" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title></title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	
+	
+	<link href="https://community.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=-DH0xTYpnVe2&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/shared/css/buttons.css?v=n-eRNszNIRMH&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/shared/css/shared_global.css?v=s_RZOH8t8alV&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/css/globalv2.css?v=GtBXfuM7ql2k&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/shared/css/login.css?v=kWee-d9Sjju-&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/shared/css/shared_responsive.css?v=BMF068jICwP9&amp;l=english" rel="stylesheet" type="text/css" >
+<link href="https://community.akamai.steamstatic.com/public/css/skin_1/header.css?v=NFoCa4OkAxRb&amp;l=english" rel="stylesheet" type="text/css" >
+<script type="text/javascript">
+	var __PrototypePreserve=[];
+	__PrototypePreserve[0] = Array.from;
+	__PrototypePreserve[1] = Array.prototype.filter;
+	__PrototypePreserve[2] = Array.prototype.flatMap;
+	__PrototypePreserve[3] = Array.prototype.find;
+	__PrototypePreserve[4] = Array.prototype.some;
+	__PrototypePreserve[5] = Function.prototype.bind;
+	__PrototypePreserve[6] = HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/prototype-1.7.js?v=.55t44gwuwgvw" ></script>
+<script type="text/javascript">
+	Array.from = __PrototypePreserve[0] || Array.from;
+	Array.prototype.filter = __PrototypePreserve[1] || Array.prototype.filter;
+	Array.prototype.flatMap = __PrototypePreserve[2] || Array.prototype.flatMap;
+	Array.prototype.find = __PrototypePreserve[3] || Array.prototype.find;
+	Array.prototype.some = __PrototypePreserve[4] || Array.prototype.some;
+	Function.prototype.bind = __PrototypePreserve[5] || Function.prototype.bind;
+	HTMLElement.prototype.scrollTo = __PrototypePreserve[6] || HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/community.akamai.steamstatic.com\/public\/";</script><script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/scriptaculous/_combined.js?v=OeNIgrpEF8tL&amp;l=english&amp;load=effects,controls,slider,dragdrop" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/global.js?v=ANwUVGvyuvAL&amp;l=english" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/jquery-1.11.1.min.js?v=.isFTSRckeNhC" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=.zYHOpI1L3Rt0" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=ymLq7HqPFUuU&amp;l=english" ></script>
+<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script><script type="text/javascript">$J = jQuery.noConflict();
+if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( "<scr" + "ipt type=\"text\/javascript\" src=\"https:\/\/community.akamai.steamstatic.com\/public\/javascript\/json2.js?v=pmScf4470EZP&amp;l=english\" ><\/script>\n" ); };
+</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				SetupTooltips( { tooltipCSSClass: 'community_tooltip'} );
+		});
+		</script><script type="text/javascript" src="https://community.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=pSvIAKtunfWg&amp;l=english" ></script>
+
+						<meta name="twitter:card" content="summary_large_image">
+			
+	<meta name="twitter:site" content="@steam" />
+
+						<meta property="og:title" content="">
+					<meta property="twitter:title" content="">
+					<meta property="og:type" content="website">
+					<meta property="fb:app_id" content="105386699540688">
+			
+	
+			<link rel="image_src" href="https://community.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png">
+		<meta property="og:image" content="https://community.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png">
+		<meta name="twitter:image" content="https://community.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png" />
+					<meta property="og:image:secure" content="https://community.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png">
+				
+	
+	
+	
+	
+	</head>
+<body class="v6 waitforauth responsive_page ">
+
+
+<div class="responsive_page_frame no_header">
+			
+		<div class="responsive_local_menu_tab"></div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu"  id="responsive_page_local_menu" data-panel="{&quot;onOptionsActionDescription&quot;:&quot;#filter_toggle&quot;,&quot;onOptionsButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;,&quot;onCancelButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;}">
+				<div class="localmenu_content" data-panel="{&quot;maintainY&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+				</div>
+			</div>
+		</div>
+
+
+
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+
+		<div class="responsive_fixonscroll_ctn nonresponsive_hidden no_menu">
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<script type="text/javascript">
+	g_sessionID = "3b2e34722da277d566c5191b";
+	g_steamID = "76561199125288728";
+	g_strLanguage = "english";
+	g_SNR = '2_60_logout_';
+	g_bAllowAppImpressions = false;
+		g_ContentDescriptorPreferences = [1,3,4];
+
+			$J( function() { InitCookiePreferencesPopup() } );
+	
+
+	// We always want to have the timezone cookie set for PHP to use
+	setTimezoneCookies();
+
+	$J( function() {
+
+		InitMiniprofileHovers(( 'https%3A%2F%2Fsteamcommunity.com' ));
+		InitEmoticonHovers();
+		ApplyAdultContentPreferences();
+	});
+
+	$J( function() { InitEconomyHovers( "https:\/\/community.akamai.steamstatic.com\/public\/css\/skin_1\/economy.css?v=W1lpCYkssBMO&l=english", "https:\/\/community.akamai.steamstatic.com\/public\/javascript\/economy_common.js?v=tsXdRVB0yEaR&l=english", "https:\/\/community.akamai.steamstatic.com\/public\/javascript\/economy.js?v=zBu5E2N7nc-G&l=english" );});</script>
+<div id="application_config" style="display: none;"  data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;english&quot;,&quot;COUNTRY&quot;:&quot;PT&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.akamai.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.akamai.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/community.akamai.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/community.akamai.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/steamcommunity.com\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1687905668,&quot;PAGE_TIMESTAMP&quot;:1688038310,&quot;IN_TENFOOT&quot;:false,&quot;IN_GAMEPADUI&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;unknown&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.akamai.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Community&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.akamai.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.akamai.steamstatic.com\/&quot;,&quot;SNR&quot;:&quot;2_60_logout_&quot;}" data-userinfo="[]" data-community="[]" data-loyaltystore="{&quot;webapi_token&quot;:&quot;085992d584ada887e062dc1746c8f678&quot;}" data-loyalty_webapi_token="&quot;085992d584ada887e062dc1746c8f678&quot;" data-steam_notifications="{&quot;notifications&quot;:[{&quot;notification_id&quot;:&quot;32210978823&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;4255386153020070063\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686718976,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32311635193&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238198433217\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686787812,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32416332026&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238201976042\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686861010,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119849&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168239\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119854&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168242\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119855&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168245\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119856&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168248\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119857&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168253\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32423119858&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202168256\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686865184,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430397651&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202399487\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870339,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430397652&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202399488\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870339,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430488802&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202403243\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870422,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430777691&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202410330\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870583,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32430777694&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202410331\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870583,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;32431229016&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;5549045238202419456\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1686870788,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;33370173246&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;4243002139663506314\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1687666084,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0},{&quot;notification_id&quot;:&quot;33370173247&quot;,&quot;notification_targets&quot;:3,&quot;notification_type&quot;:4,&quot;body_data&quot;:&quot;{\&quot;app_id\&quot;:\&quot;252490\&quot;,\&quot;context_id\&quot;:\&quot;2\&quot;,\&quot;asset_id\&quot;:\&quot;4243002139663506317\&quot;}&quot;,&quot;read&quot;:0,&quot;timestamp&quot;:1687666084,&quot;hidden&quot;:0,&quot;expiry&quot;:0,&quot;viewed&quot;:0}],&quot;pending_gift_count&quot;:0,&quot;pending_friend_count&quot;:0,&quot;unread_count&quot;:17,&quot;success&quot;:1,&quot;rwgrsn&quot;:-2}"></div><link href="https://community.akamai.steamstatic.com/public/css/applications/community/main.css?v=f0K-RL4Kp9_R&amp;l=english" rel="stylesheet" type="text/css" >
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/applications/community/manifest.js?v=Ap77QfkcNEeX&amp;l=english" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/applications/community/libraries~b28b7af69.js?v=gGa9egdalgLx&amp;l=english" ></script>
+<script type="text/javascript" src="https://community.akamai.steamstatic.com/public/javascript/applications/community/main.js?v=EY0KdfJaxlp4&amp;l=english" ></script>
+	<div id="application_root"></div>
+
+		<div class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true}" >
+
+			
+	<script type="text/javascript">
+		function TransferLogout( rgURLs, parameters )
+		{
+			if ( this.m_bLoginTransferInProgress )
+				return;
+			this.m_bLoginTransferInProgress = true;
+
+			var bOnCompleteFired = false;
+			var _this = this;
+			var fnOnComplete = function() {
+				if ( !bOnCompleteFired )
+				{
+					window.location = 'https://steamcommunity.com';
+				}
+				bOnCompleteFired = true;
+			};
+
+			var cResponsesExpected = rgURLs.length;
+			$J(window).on( 'message', function() {
+				if ( --cResponsesExpected == 0 )
+					fnOnComplete();
+			});
+
+
+			for ( var i = 0 ; i < rgURLs.length; i++ )
+			{
+				var $IFrame = $J('<iframe>', {id: 'transfer_iframe' } ).hide();
+				$J(document.body).append( $IFrame );
+
+				var doc = $IFrame[0].contentWindow.document;
+				doc.open();
+				doc.write( '<form method="POST" action="' + rgURLs[i] + '" name="transfer_form">' );
+				for ( var param in parameters )
+				{
+					doc.write( '<input type="hidden" name="' + param + '" value="' + V_EscapeHTML( parameters[param] ) + '">' );
+				}
+				doc.write( '</form>' );
+				doc.write( '<script>window.onload = function(){ document.forms["transfer_form"].submit(); }<\/script>' );
+				doc.close();
+			}
+
+			// after 10 seconds, give up on waiting for transfer
+			window.setTimeout( fnOnComplete, 10000 );
+		}
+
+		$J( function() {
+			var rgParameters = {
+				in_transfer: 1,
+				auth: "fda4a991007b41ee5dbb09c5ab304e7e"			};
+
+			
+			TransferLogout( ["https:\/\/store.steampowered.com\/login\/logout\/","https:\/\/help.steampowered.com\/login\/logout\/"], rgParameters );
+		});
+	</script>
+	<div class="login_client_waitforauth">
+		<div id="waitforauth_waiting">
+			<div class="login_client_waitforauth_title">Please wait</div>
+			<div class="login_client_waitforauth_desc" id="waitforauth_waiting">
+				Logging you out...<br><br>
+				<img src="https://community.akamai.steamstatic.com/public/shared/images/login/throbber.gif">
+			</div>
+		</div>
+	</div>
+
+		</div>	<!-- responsive_page_legacy_content -->
+
+		
+	</div>	<!-- responsive_page_content -->
+
+</div>	<!-- responsive_page_frame -->
+</body>
+</html>
+2023-06-29 07:31:52,639:DEBUG:steam.client: Dispatching event logout
