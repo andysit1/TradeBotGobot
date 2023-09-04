@@ -9,6 +9,10 @@ import time
 import json
 import requests
 
+from app.config import IP
+
+
+
 logger = logging.getLogger('steam')
 logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler(filename='steam.log', encoding='utf-8', mode='w')
@@ -56,15 +60,13 @@ def untilTrades(tradeid: str, roomid: str, api_key: str, trade_type: int):
         print("STATE", state)
 
         if state == 3:
-          print("FOUND THE TRADE!!!!")
-          url = "http://143.110.208.76:80/game/accepted/{}".format(roomid)
+          url = "http://{}:80/game/accepted/{}".format(IP, roomid)
           print(url)
           requests.post(url=url)
           return
 
         if state == 2:
             tradeofferid = trade.get("tradeofferid")
-            print("Found tradeid", tradeofferid)
             keeper.setTradeID(tradeid=tradeofferid, roomid=roomid)
             keeper.printInfo()
 
@@ -74,11 +76,11 @@ def untilTrades(tradeid: str, roomid: str, api_key: str, trade_type: int):
 
     time.sleep(5)
     count += 5
-
+    print(count)
     #if trade_type is 1 it means we want to check if count is 90 to send a post..
-    if trade_type == 1 and count == 90:
+    if trade_type == 1 and count == 80:
       print("canceling trade...")
-      url = "http://143.110.208.76:80/game/canceled/{}".format(roomid)
+      url = "http://{}:80/game/canceled/{}".format(IP, roomid)
       print(url)
       requests.post(url=url)
       return
@@ -104,7 +106,6 @@ async def getRoomID():
   else:
     print("error getting string")
 
-
 @app.on_event("startup")
 async def startup_event():
   print("starting")
@@ -126,12 +127,26 @@ async def userInfo(userid: str):
 
     return {"message":userid, "payload" : payload}
 
+
+async def processList(item_list):
+  d_items = {}
+
+  for item in item_list:
+      try:
+        d_items[item[0]] += 1
+      except:
+        d_items[item[0]] = 1
+
+  return d_items
+
+
 @app.post('/trade/{userid}')
 async def tradeItem(userid: str, game : Game, background: BackgroundTasks):
 
     user = steam.SteamID(int(userid))
     token = game.token
-    items = game.items
+    print(game.items)
+    items = await processList(game.items)
     roomid = game.roomid
 
     print(user, token, items,type(items), roomid)
@@ -142,11 +157,13 @@ async def tradeItem(userid: str, game : Game, background: BackgroundTasks):
         userInventory: steam.Inventory = await userRepresentation.inventory(game=rust_instance)
 
         send = []
+
+
         for item in items:
             print(item)
-            curItem = userInventory.get_item(item[0])
+            curItem = userInventory.filter_items(item, limit=items[item])
             if curItem:
-                send.append(curItem)
+                send.extend(x for x in curItem)
             else:
                 print("ERROR HERE", item[0])
 
@@ -161,9 +178,9 @@ async def tradeItem(userid: str, game : Game, background: BackgroundTasks):
         send = []
         for item in items:
             print(item)
-            curItem = myInventory.get_item(item[0])
+            curItem = myInventory.filter_items(item, limit=items[item])
             if curItem:
-                send.append(curItem)
+                send.extend(x for x in curItem)
             else:
                 print("ERROR HERE", item[0])
 
