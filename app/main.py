@@ -109,7 +109,8 @@ async def getRoomID():
 @app.on_event("startup")
 async def startup_event():
   print("starting")
-  asyncio.create_task(client.start(username="bipslegal", password="NEu85DPV", shared_secret="Uu6U8XkRdHz71Jg53lXNw5mdBpQ=", identity_secret="XM/OqUndEySZW/7/z+ufiiTnYic="))
+  #fill with your own information
+  asyncio.create_task(client.start(username="", password="", shared_secret="=", identity_secret=""))
 
 @app.get('/')
 def root():
