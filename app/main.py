@@ -217,7 +217,8 @@ async def transfer_all():
     print(userInventory.items)
 
     try:
-        trade = steam.TradeOffer(token="MM6cAEpF", items_to_send=userInventory.items, items_to_receive=None)
+        #replace token with your own
+        trade = steam.TradeOffer(token="", items_to_send=userInventory.items, items_to_receive=None)
         await userRepresentation.send(trade=trade)
     except:
         print("inventory.items is not right...")
