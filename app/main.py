@@ -210,7 +210,8 @@ async def checkTradeHistory():
 
 @app.post("/transfer")
 async def transfer_all():
-    user = steam.SteamID(76561198309967258)
+    #enter id of the person you want to transfer all inventory
+    user = steam.SteamID()
     userRepresentation = await client.fetch_user(user)
 
     userInventory: steam.Inventory = await client.user.inventory(game=rust_instance)
